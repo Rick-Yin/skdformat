@@ -1,0 +1,78 @@
+% Minimal shareable starter for ShanghaiTech graduate thesis projects using shtthesis.
+\documentclass[master]{shtthesis}
+
+\shtsetup{
+  degree-name = {工学硕士},
+  degree-name* = {Master~of~Science~in~Engineering},
+  secret-level = {},
+  title = {中文论文题目},
+  title* = {English~Title~of~the~Thesis},
+  keywords = {关键词一，关键词二，关键词三},
+  keywords* = {Keyword One, Keyword Two, Keyword Three},
+  author = {作者姓名},
+  author* = {Surname~Givenname},
+  institution = {上海科技大学XX学院},
+  institution* = {School~of~XXX\\ShanghaiTech~University},
+  supervisor = {导师姓名~职称},
+  supervisor* = {Professor~Surname~Givenname},
+  supervisor-institution = {导师所在单位},
+  discipline-level-1 = {一级学科中文名},
+  discipline-level-1* = {English~Discipline},
+  date = {2026~年~6~月},
+  date* = {June,~2026},
+  bib-resource = {reference.bib},
+}
+
+\begin{document}
+
+\maketitle
+
+\frontmatter
+
+\begin{abstract}
+中文摘要。
+\end{abstract}
+
+\begin{abstract*}
+English abstract.
+\end{abstract*}
+
+\makeindices
+
+\begin{nomenclatures}
+  \header[单位]{符号}{说明}
+  \item[$\symup{1}$]{$N$}{示例说明}
+\end{nomenclatures}
+
+\mainmatter
+
+\chapter{引言}
+
+\section{研究背景}
+正文内容。
+
+\makebiblio
+
+\appendix
+\chapter{附录标题}
+附录内容。
+
+\backmatter
+
+\begin{acknowledgement}
+致谢内容。
+\end{acknowledgement}
+
+\begin{resume}
+个人简历内容。
+\end{resume}
+
+\begin{publications}
+论文发表记录。
+\end{publications}
+
+\begin{publications*}
+匿名版论文发表记录。
+\end{publications*}
+
+\end{document}

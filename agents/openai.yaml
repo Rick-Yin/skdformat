@@ -1,0 +1,4 @@
+interface:
+  display_name: "SKD Format"
+  short_description: "ShanghaiTech thesis formatting for LaTeX and review"
+  default_prompt: "Use $skdformat to draft, lint, or fix a ShanghaiTech thesis document with the correct format."
